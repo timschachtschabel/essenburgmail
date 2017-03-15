@@ -12,7 +12,7 @@
             </button>
 
             <!-- Branding Image -->
-            <a class="navbar-brand"<a href="{{ url('/home') }}">
+            <a class="navbar-brand" href="{{ url('/home') }}">
                 Home
             </a>
         </div>
@@ -20,8 +20,14 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/customers') }}">Customers</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customers <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url('/customers') }}">Customer list</a></li>
+                        <li><a href="{{ url('/customers/create') }}">Add customer</a></li>
+                    </ul>
             </ul>
+
 
             <!-- Right Side Of Navbar -->
             <ul class="nav navbar-nav navbar-right">
