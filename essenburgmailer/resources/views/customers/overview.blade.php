@@ -19,3 +19,6 @@
 @endsection
 
 @extends('components.foot')
+<footer>
+    @include('components.footer')
+</footer>
