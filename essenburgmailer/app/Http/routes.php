@@ -19,6 +19,8 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('customers', 'customersController');
 
+    Route::put('customers/suspend/{customer}', 'customersController@suspend');
+
 });
 
 Route::auth();

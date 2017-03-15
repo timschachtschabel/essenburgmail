@@ -33,7 +33,7 @@
             <input type="text" name="subscriptiontype" id="subscriptiontype" class="form-control">
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary" value="Register">
+            <input type="submit" class="btn btn-primary" value="Add">
         </div>
     </form>
 </div>
