@@ -54,6 +54,9 @@ class customersController extends Controller
         $customer->name = $request->name;
         $customer->email = $request->email;
         $customer->phonenumber = $request->phonenumber;
+        $customer->company_name = $request->companyname;
+        $customer->website_link = $request->websitelink;
+        $customer->subscription_type = $request->subscriptiontype;
 
         $customer->save();
         return redirect()->action('customersController@index');
@@ -82,6 +85,9 @@ class customersController extends Controller
         $customer->name = $request->name;
         $customer->email = $request->email;
         $customer->phonenumber = $request->phonenumber;
+        $customer->company_name = $request->companyname;
+        $customer->website_link = $request->websitelink;
+        $customer->subscription_type = $request->subscriptiontype;
 
         $customer->update();
         return redirect()->action('customersController@edit', $customer->id);
