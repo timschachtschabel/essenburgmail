@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('welcome');
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
