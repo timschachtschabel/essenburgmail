@@ -40,7 +40,9 @@
 
 @endsection
 
-@extends('components.foot')
 <footer>
     @include('components.footer')
 </footer>
+
+@extends('components.foot')
+

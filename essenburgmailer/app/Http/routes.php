@@ -23,6 +23,12 @@ Route::group(['middleware' => 'auth'], function() {
 
 });
 
+Route::group(['middleware' => 'auth'], function() {
+
+    Route::resource('contents', 'contentsController');
+
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

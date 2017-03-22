@@ -26,6 +26,14 @@
                         <li><a href="{{ url('/customers') }}">Customer list</a></li>
                         <li><a href="{{ url('/customers/create') }}">Add customer</a></li>
                     </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contents <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url('/contents') }}">Content list</a></li>
+                        <li><a href="{{ url('/contents/create') }}">Add content</a></li>
+                    </ul>
+                </li>
             </ul>
 
 
