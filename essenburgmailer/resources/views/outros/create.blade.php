@@ -3,10 +3,10 @@
 
 @section('content')
 
-    <div class="addcontent col-md-8 col-md-offset-2">
+    <div class="addoutro col-md-8 col-md-offset-2">
         <h3>Add a new message</h3>
 
-        <form action="{{action('contentsController@store')}}" method="post">
+        <form action="{{action('outrosController@store')}}" method="post">
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="name">Name</label>

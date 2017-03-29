@@ -13,10 +13,13 @@ class contentsController extends Controller
         $contents = \App\Content::all();
         return view('contents/overview', compact('contents'));
     }
-
+    
     public function destroy($id) {
-        Customer::destroy($id);
-        return redirect()->action('customersController@index');
+        
+        $object = Content::findorFail($id);
+        $object->delete();
+
+        return redirect()->action('contentsController@index');
     }
 
     public function show($id) {

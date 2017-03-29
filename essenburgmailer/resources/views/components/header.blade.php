@@ -13,7 +13,8 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/home') }}">
-                <img src="{{ asset('img/logo.png') }}" style="height: 100%; width: 100px;">
+                {{--<img src="{{ asset('img/logo.png') }}" style="height: 100%; width: 100px;">--}}
+                Essenburg Multimedia
             </a>
         </div>
 
@@ -32,6 +33,13 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{ url('/contents') }}">Content list</a></li>
                         <li><a href="{{ url('/contents/create') }}">Add content</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outros <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url('/outros') }}">Outro list</a></li>
+                        <li><a href="{{ url('/outros/create') }}">Add outro</a></li>
                     </ul>
                 </li>
             </ul>

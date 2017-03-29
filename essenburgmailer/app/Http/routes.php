@@ -26,8 +26,17 @@ Route::group(['middleware' => 'auth'], function() {
 Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('contents', 'contentsController');
+    
+    Route::delete('contents/destroy/{id}', 'contentsController@destroy');
 
 });
+
+Route::group(['middleware' => 'auth'], function() {
+
+    Route::resource('outros', 'outrosController');
+
+});
+
 
 Route::auth();
 

@@ -4,11 +4,11 @@
 @section('content')
 
     <ul class="list-group col-md-8 col-md-offset-2">
-        @foreach($contents as $content)
+        @foreach($outros as $outro)
             <li class="list-group-item">
-                <a href="{{action('contentsController@show', $content->id)}}">{{$content->name}}</a>
+                <a href="{{action('outrosController@show', $outro->id)}}">{{$outro->name}}</a>
 
-                <form action="{{action('contentsController@destroy', $content->id)}}" method="post" class="pull-right">
+                <form action="{{action('outrosController@destroy', $outro->id)}}" method="post" class="pull-right">
                     {{ csrf_field() }}
                     <input type="hidden" name="_method" value="delete">
                     <input type="submit" value="x" class="button btn-danger">

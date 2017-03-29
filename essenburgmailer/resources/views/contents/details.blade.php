@@ -5,7 +5,7 @@
 
     <div class="contentdetails col-md-8 col-md-offset-2" style="text-align: center;">
         <h2>{{ $contents->name  }} <span>ID: {{$contents->id}}</span></h2>
-        <textarea name="" id="" cols="50" rows="20">{{$contents->message}}</textarea>
+        <textarea name="" id="tinyMCE" cols="50" rows="20" readonly="readonly">{{$contents->message}}</textarea>
     </div>
 
     <div class="actions col-md-offset-4 col-md-6" style="margin-top: 20px;">
