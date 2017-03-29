@@ -21,22 +21,15 @@ Route::group(['middleware' => 'auth'], function() {
 
     Route::put('customers/suspend/{customer}', 'customersController@suspend');
 
-});
-
-Route::group(['middleware' => 'auth'], function() {
-
     Route::resource('contents', 'contentsController');
-    
+
     Route::delete('contents/destroy/{id}', 'contentsController@destroy');
-
-});
-
-Route::group(['middleware' => 'auth'], function() {
 
     Route::resource('outros', 'outrosController');
 
-});
+    Route::resource('intros', 'introsController');
 
+});
 
 Route::auth();
 

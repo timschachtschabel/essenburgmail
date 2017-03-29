@@ -36,6 +36,13 @@
                     </ul>
                 </li>
                 <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Intros<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url('/intros') }}">Intro list</a></li>
+                        <li><a href="{{ url('/intros/create') }}">Add Intro</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outros <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ url('/outros') }}">Outro list</a></li>
